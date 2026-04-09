@@ -420,5 +420,61 @@
     </div>
 
     <script src="./script.js"></script>
-  </body>
+  </body><!-- 赛博朋克风格 背景音乐播放器 -->
+<audio id="cyberMusic" loop>
+  <source src="bgm.mp3" type="audio/mpeg">
+</audio>
+
+<style>
+.music-btn {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #111;
+  border: 2px solid #0ff;
+  color: #0ff;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 0 12px #0ff, 0 0 24px #0ff;
+  transition: all 0.3s ease;
+}
+.music-btn:hover {
+  background: #0ff;
+  color: #000;
+  transform: scale(1.1);
+}
+.music-btn.playing {
+  border-color: #f0f;
+  color: #f0f;
+  box-shadow: 0 0 12px #f0f, 0 0 24px #f0f;
+}
+</style>
+
+<button class="music-btn" id="musicBtn" onclick="toggleMusic()">🎵</button>
+
+<script>
+const audio = document.getElementById('cyberMusic');
+const btn = document.getElementById('musicBtn');
+let isPlay = false;
+
+function toggleMusic() {
+  if (isPlay) {
+    audio.pause();
+    btn.classList.remove('playing');
+  } else {
+    audio.play().catch(e => console.log(e));
+    btn.classList.add('playing');
+  }
+  isPlay = !isPlay;
+}
+
+// 进入页面点一下就自动播放（解决浏览器限制）
+document.addEventListener('click', () => {
+  if (!isPlay) toggleMusic();
+}, { once: true });
+</script>
 </html>
