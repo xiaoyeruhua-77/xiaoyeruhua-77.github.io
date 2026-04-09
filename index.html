@@ -461,6 +461,40 @@ const audio = document.getElementById('cyberMusic');
 const btn = document.getElementById('musicBtn');
 let isPlay = false;
 
+let isDragging = false;
+let startX, startY;
+let initialLeft, initialTop;
+
+btn.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startX = e.clientX;
+    startY = e.clientY;
+    
+    // 获取当前元素位置
+    const rect = btn.getBoundingClientRect();
+    initialLeft = rect.left;
+    initialTop = rect.top;
+    
+    btn.classList.add('dragging');
+    e.preventDefault();
+});
+
+document.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    
+    const deltaX = e.clientX - startX;
+    const deltaY = e.clientY - startY;
+    
+    btn.style.left = `${initialLeft + deltaX}px`;
+    btn.style.top = `${initialTop + deltaY}px`;
+});
+
+document.addEventListener('mouseup', () => {
+    isDragging = false;
+    btn.classList.remove('dragging');
+});
+
+
 function toggleMusic() {
   if (isPlay) {
     audio.pause();
