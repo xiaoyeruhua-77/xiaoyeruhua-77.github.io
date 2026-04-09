@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="韩少奇 - 赛博朋克风格个人简历" />
+    <title>韩少奇 | CYBER_RESUME</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到正文</a>
+
+    <!-- 欢迎界面 -->
+    <div class="welcome-screen" id="welcome">
+      <div class="welcome-bg"></div>
+      <div class="welcome-grid"></div>
+      <div class="welcome-content">
+        <img class="welcome-avatar" src="./images/Trae修改网站后同步到网页端22.png" alt="赛博朋克头像" width="260" height="300" />
+        <div class="welcome-lines">
+          <span class="welcome-line"></span>
+          <span style="color: var(--cyan); font-size: 12px; letter-spacing: 2px;">ALL_SYSTEMS_GO</span>
+          <span class="welcome-line"></span>
+        </div>
+        <h1 class="welcome-title glitch" data-text="WELCOME">WELCOME</h1>
+        <p class="welcome-subtitle">Welcome to my world!</p>
+        <button class="welcome-enter" id="enter-btn" type="button">[ Let's Start ]</button>
+      </div>
+    </div>
+
+    <!-- 固定导航 -->
+    <header class="site-header" id="top">
+      <div class="container">
+        <nav class="nav" aria-label="主导航">
+          <a class="brand" href="#" data-slide="0" aria-label="返回首页">
+            <span class="brand-dot" aria-hidden="true"></span>
+            <span class="brand-text">韩少奇</span>
+          </a>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+            <span class="nav-toggle-lines" aria-hidden="true"></span>
+            <span class="sr-only">打开/关闭导航</span>
+          </button>
+          <div class="nav-links" id="nav-links">
+            <a class="nav-link is-active" href="#" data-slide="0">关于我</a>
+            <a class="nav-link" href="#" data-slide="1">经历</a>
+            <a class="nav-link" href="#" data-slide="2">技能/作品</a>
+            <a class="nav-link" href="#" data-slide="3">联系方式</a>
+            <a class="nav-link" href="#" data-slide="4">小红书</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- 横滑内容容器 -->
+    <div class="slides-wrapper">
+      <div class="slides-container" id="slides-container">
+
+        <!-- 第1页：关于我 -->
+        <div class="slide" id="slide-about">
+          <div class="container">
+            <section class="section" id="about">
+              <div class="section-head">
+                <h2 class="section-title">关于我</h2>
+                <p class="section-desc">// PERSONAL_INFO</p>
+              </div>
+
+              <div class="hero">
+                <div class="hero-left">
+                  <h1 class="hero-title">韩少奇</h1>
+                  <div class="hero-badges">
+                    <span class="badge">AI训练师</span>
+                    <span class="badge badge-muted">PE训练师</span>
+                    <span class="badge badge-muted">求职中</span>
+                  </div>
+                  <p class="hero-subtitle">
+                    我专注于 AI 模型训练与数据标注优化工作，擅长将复杂的训练需求拆解为清晰、可落地的执行方案，注重训练流程规范与模型效果迭代，拥有一年 AI 训练相关实战经验。
+                  </p>
+                  <div class="hero-cta">
+                    <a class="btn btn-primary" href="#" data-slide="3">联系我</a>
+                    <a class="btn btn-ghost" href="#" data-slide="2">查看技能与作品</a>
+                  </div>
+                  <dl class="hero-meta">
+                    <div class="hero-meta-item">
+                      <dt>位置</dt>
+                      <dd>北京</dd>
+                    </div>
+                    <div class="hero-meta-item">
+                      <dt>方向</dt>
+                      <dd>PE训练师 / AI 模型训练</dd>
+                    </div>
+                    <div class="hero-meta-item">
+                      <dt>状态</dt>
+                      <dd>两周内可入职</dd>
+                    </div>
+                  </dl>
+                </div>
+                <div class="hero-right">
+                  <figure class="avatar-card reveal">
+                    <img class="avatar" src="./images/Trae修改网站后同步到网页端22.png" alt="头像" width="260" height="300" loading="eager" />
+                    <figcaption class="avatar-caption">
+                      <strong>关键词</strong>
+                      <span class="avatar-tags">
+                        <span class="tag">结果导向</span>
+                        <span class="tag">沟通协作</span>
+                        <span class="tag">自驱学习</span>
+                      </span>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+
+              <div class="grid grid-2" style="margin-top: 24px;">
+                <article class="card reveal">
+                  <h3 class="card-title">个人介绍</h3>
+                  <p class="card-text">
+                    我有 2 年 AI训练师经验，关注工程质量与用户体验。熟悉从需求分析、方案设计到落地交付的完整流程，擅长在约束条件下做权衡。
+                  </p>
+                  <ul class="list">
+                    <li>关注可复用组件与设计系统</li>
+                    <li>擅长拆解复杂需求并推动落地</li>
+                    <li>重视代码规范、可测试性与可观测性</li>
+                  </ul>
+                </article>
+                <article class="card reveal">
+                  <h3 class="card-title">教育背景</h3>
+                  <div class="edu">
+                    <div class="edu-row">
+                      <div class="edu-left">
+                        <strong>晋中学院</strong>
+                        <span class="muted">2022 - 2024</span>
+                      </div>
+                      <div class="edu-right">
+                        <div>本科 · 旅游管理</div>
+                      </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="edu-row">
+                      <div class="edu-left"><strong>关键课程</strong></div>
+                      <div class="edu-right">
+                        <span class="tag">管理学原理</span>
+                        <span class="tag">旅游学概论</span>
+                        <span class="tag">旅游行为分析</span>
+                        <span class="tag">旅游产品设计</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <!-- 第2页：经历 -->
+        <div class="slide" id="slide-experience">
+          <div class="container">
+            <section class="section section-alt" id="experience">
+              <div class="section-head">
+                <h2 class="section-title">工作 / 项目经历</h2>
+                <p class="section-desc">// TIMELINE</p>
+              </div>
+              <div class="timeline">
+                <article class="timeline-item card reveal">
+                  <div class="timeline-meta">
+                    <span class="timeline-time">2024.07 - 至今</span>
+                    <span class="timeline-badge">全职</span>
+                  </div>
+                  <h3 class="timeline-title">某某科技有限公司 · prompt工程师</h3>
+                  <p class="muted">业务方向：大模型 Prompt 优化/AI 应用场景落地/交互效果提升</p>
+                  <ul class="list">
+                    <li>针对业务场景设计、迭代高质量提示词，提升模型输出准确性与稳定性</li>
+                    <li>拆解复杂需求为结构化 Prompt，输出标准化模板与执行规范</li>
+                    <li>跟踪模型效果反馈，持续优化指令逻辑，降低无效交互与重复调试成本</li>
+                  </ul>
+                  <div class="tag-row">
+                    <span class="tag">React</span>
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">Vite</span>
+                    <span class="tag">ECharts</span>
+                  </div>
+                </article>
+                <article class="timeline-item card reveal">
+                  <div class="timeline-meta">
+                    <span class="timeline-time">2023.03 - 2024.06</span>
+                    <span class="timeline-badge timeline-badge-muted">项目</span>
+                  </div>
+                  <h3 class="timeline-title">个人作品：静态个人网站 · 独立开发</h3>
+                  <p class="muted">目标：一个无需后端、可直接部署 GitHub Pages 的简历站点</p>
+                  <ul class="list">
+                    <li>设计卡片式信息架构，模块清晰，适配移动端/平板/桌面端</li>
+                    <li>实现滚动高亮导航、轻量动效与可访问性优化（键盘导航/对比度）</li>
+                    <li>采用纯 HTML/CSS/JS，无构建依赖，本地双击即可预览</li>
+                  </ul>
+                  <div class="tag-row">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">GitHub Pages</span>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <!-- 第3页：技能/作品 -->
+        <div class="slide" id="slide-skills">
+          <div class="container">
+            <section class="section" id="skills">
+              <div class="section-head">
+                <h2 class="section-title">专业技能 / 作品集</h2>
+                <p class="section-desc">// SKILLS_PORTFOLIO</p>
+              </div>
+              <div class="grid grid-3">
+                <article class="card reveal">
+                  <h3 class="card-title">技术栈</h3>
+                  <div class="skill">
+                    <div class="skill-head"><span>J大模型指令工程 / Prompt 优化</span><span class="muted">熟练</span></div>
+                    <div class="progress" role="progressbar" aria-valuenow="85"><div class="progress-bar" style="width:85%"></div></div>
+                  </div>
+                  <div class="skill">
+                    <div class="skill-head"><span>数据标注与 SFT 数据集构建</span><span class="muted">熟练</span></div>
+                    <div class="progress" role="progressbar" aria-valuenow="80"><div class="progress-bar" style="width:80%"></div></div>
+                  </div>
+                  <div class="skill">
+                    <div class="skill-head"><span>大模型微调与对齐技术</span><span class="muted">良好</span></div>
+                    <div class="progress" role="progressbar" aria-valuenow="75"><div class="progress-bar" style="width:75%"></div></div>
+                  </div>
+                  <div class="tag-row">
+                    <span class="tag">可标注性</span>
+                    <span class="tag">可评测性</span>
+                    <span class="tag">可落地性</span>
+                  </div>
+                </article>
+                <article class="card reveal">
+                  <h3 class="card-title">工具链</h3>
+                  <div class="tag-row">
+                    <span class="tag">Git</span>
+                    <span class="tag">LabelStudio</span>
+                    <span class="tag">Hugging Face</span>
+                    <span class="tag">LLaMA Factory</span>
+                    <span class="tag">Jupyter Lab</span>
+                    <span class="tag">LangChain</span>
+                  </div>
+                  <p class="card-text muted" style="margin-top:12px;">只保留实战验证的工具，助力大模型从训练到落地的全流程高效推进。</p>
+                </article>
+                <article class="card reveal">
+                  <h3 class="card-title">软技能</h3>
+                  <ul class="list">
+                    <li>需求澄清：用可验证的方式对齐目标与边界</li>
+                    <li>沟通协作：推动跨团队对齐，降低返工</li>
+                    <li>交付意识：拆分迭代，控制风险，持续上线</li>
+                  </ul>
+                  <div class="tag-row">
+                    <span class="tag">Owner 意识</span>
+                    <span class="tag">复盘改进</span>
+                    <span class="tag">文档沉淀</span>
+                  </div>
+                </article>
+              </div>
+              <div class="section-subhead">
+                <h3 class="section-subtitle">作品集</h3>
+              </div>
+              <div class="grid grid-2">
+                <article class="card project reveal">
+                  <div class="project-head">
+                    <h4 class="project-title">项目 A：AI 训练数据集标注体系搭建</h4>
+                    <span class="badge badge-muted">2024</span>
+                  </div>
+                  <p class="muted">构建标准化标注规范与质检流程，保障训练数据质量，支撑多轮模型迭代。</p>
+                  <ul class="list">
+                    <li>设计多轮标注质检规则，数据标注准确率提升至 98%，标注效率提升 40%</li>
+                    <li>搭建自动化数据清洗工具，完成 10 万 + 语料的去重、脱敏与格式标准化</li>
+                  </ul>
+                  <div class="project-links">
+                    <a class="link" href="https://github.com/yourname/your-repo" target="_blank" rel="noreferrer">GitHub</a>
+                    <a class="link" href="#" target="_blank" rel="noreferrer">在线演示</a>
+                  </div>
+                </article>
+                <article class="card project reveal">
+                  <div class="project-head">
+                    <h4 class="project-title">项目 B：大模型指令微调与业务对齐 </h4>
+                    <span class="badge badge-muted">2025</span>
+                  </div>
+                  <p class="muted">针对垂直业务场景优化大模型输出，提升回答准确率与业务适配度，降低人工审核成本。</p>
+                  <ul class="list">
+                    <li>沉淀 10000 + 高质量 SFT 样本，模型业务准确率提升 35%，覆盖 90% 高频业务场景</li>
+                    <li>搭建 RLHF/DPO 对齐流程，优化模型输出合规性与用户满意度</li>
+                  </ul>
+                  <div class="project-links">
+                    <a class="link" href="https://github.com/yourname/your-repo" target="_blank" rel="noreferrer">GitHub</a>
+                    <a class="link" href="#" target="_blank" rel="noreferrer">在线演示</a>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <!-- 第4页：联系方式 -->
+        <div class="slide" id="slide-contact">
+          <div class="container">
+            <section class="section section-alt" id="contact">
+              <div class="section-head">
+                <h2 class="section-title">联系方式</h2>
+                <p class="section-desc">// CONTACT_INFO</p>
+              </div>
+              <div class="grid grid-2">
+                <article class="card reveal">
+                  <h3 class="card-title">快速联系</h3>
+                  <ul class="contact">
+                    <li>
+                      <span class="contact-label">邮箱</span>
+                      <a class="contact-value" href="mailto:you@example.com">113482@qqmail.com</a>
+                    </li>
+                    <li>
+                      <span class="contact-label">GitHub</span>
+                      <a class="contact-value" href="https://github.com/yourname" target="_blank" rel="noreferrer">github.com/xiaoyeruhua-77</a>
+                    </li>
+                    <li>
+                      <span class="contact-label">WeChat</span>
+                      <a class="contact-value" href="https://www.linkedin.com/in/yourname" target="_blank" rel="noreferrer">WeChat/in/Switch_77</a>
+                    </li>
+                    <li>
+                      <span class="contact-label">电话</span>
+                      <a class="contact-value" href="tel:+8613800000000">+86 13283542313</a>
+                    </li>
+                  </ul>
+                </article>
+                <article class="card reveal">
+                  <h3 class="card-title">求职偏好</h3>
+                  <div class="prefs">
+                    <div class="prefs-row">
+                      <span class="muted">期望城市</span>
+                      <span>北京 / 杭州 / 深圳</span>
+                    </div>
+                    <div class="prefs-row">
+                      <span class="muted">期望岗位</span>
+                      <span>AI 训练师 / PE 项目工程师</span>
+                    </div>
+                    <div class="prefs-row">
+                      <span class="muted">期望薪资</span>
+                      <span>面议</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </section>
+            <footer class="site-footer">
+              <div class="container footer-inner">
+                <small>© <span id="year"></span> 韩少奇. All rights reserved.</small>
+                <span style="color: var(--cyan); font-size: 11px; letter-spacing: 2px;">// END_OF_LINE</span>
+              </div>
+            </footer>
+          </div>
+        </div>
+
+        <!-- 第5页：小红书 -->
+        <div class="slide" id="slide-xiaohongshu">
+          <div class="container">
+            <section class="section" id="xiaohongshu">
+              <div class="section-head">
+                <h2 class="section-title">小红书</h2>
+                <p class="section-desc">// XIAOHONGSHU_PROFILE</p>
+              </div>
+
+              <!-- 小红书主页信息 -->
+              <div class="xhs-profile card reveal">
+                <div class="xhs-profile-header">
+                  <img class="xhs-avatar" src="./images/avatar.svg" alt="小红书头像" width="80" height="80" />
+                  <div class="xhs-profile-info">
+                    <h3 class="xhs-nickname">韩少奇的赛博空间</h3>
+                    <p class="xhs-bio">AI训练师 | 赛博朋克爱好者 | 分享技术与生活</p>
+                  </div>
+                </div>
+                <div class="xhs-stats">
+                  <div class="xhs-stat">
+                    <span class="xhs-stat-value" id="xhs-followers">12580</span>
+                    <span class="xhs-stat-label">粉丝</span>
+                  </div>
+                  <div class="xhs-stat">
+                    <span class="xhs-stat-value" id="xhs-likes">89200</span>
+                    <span class="xhs-stat-label">获赞</span>
+                  </div>
+                  <div class="xhs-stat">
+                    <span class="xhs-stat-value" id="xhs-following">328</span>
+                    <span class="xhs-stat-label">关注</span>
+                  </div>
+                  <div class="xhs-stat">
+                    <span class="xhs-stat-value" id="xhs-notes">156</span>
+                    <span class="xhs-stat-label">笔记</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 笔记列表 -->
+              <div class="section-subhead">
+                <h3 class="section-subtitle">最新笔记</h3>
+              </div>
+              <div class="xhs-notes-grid" id="xhs-notes-grid">
+                <!-- 笔记卡片将通过JS动态加载 -->
+              </div>
+            </section>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 小红书笔记详情弹窗 -->
+    <div class="xhs-modal" id="xhs-modal">
+      <div class="xhs-modal-overlay"></div>
+      <div class="xhs-modal-content">
+        <button class="xhs-modal-close" id="xhs-modal-close" type="button">×</button>
+        <div class="xhs-modal-body" id="xhs-modal-body">
+          <!-- 弹窗内容将通过JS动态加载 -->
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
